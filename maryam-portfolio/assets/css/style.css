@@ -1,0 +1,163 @@
+/* General Body Styling */
+body {
+    background-color: black;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+}
+
+/* Navigation Styling */
+nav ul {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    text-align: center;
+    background-color: #111;
+}
+
+nav ul li {
+    display: inline;
+    margin-right: 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: white;
+    font-size: 16px;
+    padding: 10px;
+}
+
+nav ul li a:hover {
+    background-color: #f39c12;
+    box-shadow: 0 0 10px #f39c12, 0 0 20px #f39c12;
+    border-radius: 5px;
+}
+
+/* Hero Section */
+#hero {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-image: url('../assets/images/background.jpg'); /* Optional background image */
+    background-size: cover;
+    background-position: center;
+}
+
+.hero-content h1 {
+    font-size: 3em;
+    color: #f39c12;
+    margin-bottom: 20px;
+}
+
+.hero-content p {
+    font-size: 1.5em;
+    color: white;
+    margin-bottom: 30px;
+}
+
+button {
+    padding: 15px 30px;
+    background-color: #f39c12;
+    color: white;
+    border: none;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #e67e22;
+}
+
+/* About Section */
+#about {
+    padding: 50px;
+    text-align: center;
+    background-color: #1c1c1c;
+}
+
+#about h1 {
+    font-size: 2.5em;
+    margin-bottom: 20px;
+}
+
+#about p {
+    font-size: 1.2em;
+    line-height: 1.6em;
+}
+
+/* Project Section */
+.project {
+    margin-bottom: 50px;
+    text-align: center;
+}
+
+.project img {
+    width: 100%;
+    max-width: 600px;
+    margin-top: 20px;
+    border-radius: 10px;
+    transition: transform 0.3s ease;
+}
+
+.project img:hover {
+    transform: scale(1.05);
+}
+
+/* Pop-up Styling */
+.popup {
+    display: none;
+    position: fixed;
+    z-index: 1;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    justify-content: center;
+    align-items: center;
+}
+
+.popup-content {
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    width: 80%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.popup-content h2 {
+    font-size: 2em;
+    color: #f39c12;
+}
+
+.popup-content .close {
+    font-size: 2em;
+    color: #333;
+    cursor: pointer;
+}
+
+.popup-content .close:hover {
+    color: #f39c12;
+}
+
+/* Footer Styling */
+footer {
+    text-align: center;
+    padding: 20px;
+    background-color: #111;
+    color: white;
+}
+
+footer a {
+    color: #f39c12;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
